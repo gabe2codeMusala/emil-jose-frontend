@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Test coverage
+coverage
+
+# Assets
+public
+
+# Ignore assets folder
+**/assets
