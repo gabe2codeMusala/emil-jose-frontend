@@ -21,7 +21,6 @@ const UserForm: FC<FormProps> = ({ user }) => {
 	}, [user, reset]);
 
 	const onSubmit = (data: EditableUser) => {
-		console.log(data);
 		editUser(user.id, data);
 	};
 	return (
@@ -70,7 +69,7 @@ const UserForm: FC<FormProps> = ({ user }) => {
 			)}
 			<button
 				type="submit"
-				className="bg-blue-500 hover:bg-blue-700 text-white cursor-pointer rounded p-2 capitalize transition-colors duration-200"
+				className="cursor-pointer rounded bg-blue-500 p-2 capitalize text-white transition-colors duration-200 hover:bg-blue-700"
 			>
 				update user
 			</button>
