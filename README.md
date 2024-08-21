@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+An exercise for the new Project with Emil and Jose
+## Setup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Run `npm install` to install the dependencies.
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was bootstrapped with [Vite](https://vitejs.dev/).
+The scripts are available in the **package.json** file in the project
 
-## Expanding the ESLint configuration
+- `npm dev` - Runs the app in the development mode on port 5173.
+- `npm run build` - Builds the app for production to the `build` folder
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Libraries
 
-- Configure the top-level `parserOptions` property like this:
+In addition to [react](https://react.dev/) the following libraries are used in the project:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Routing: [React Router](https://reactrouter.com/en/main)
+- Form State Management: Working with forms: [react-hook-form](https://www.react-hook-form.com/)
+- Styles: [tailwindCss](https://tailwindcss.com/)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Most recent activity algorithm
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To solve this challenge in the most efficient way I took the approach of *Counting and Tracking*, which is designed for efficient data processing and focuses on reducing the computational complexity.
